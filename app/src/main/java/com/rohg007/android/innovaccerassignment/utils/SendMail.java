@@ -53,7 +53,7 @@ public class SendMail extends AsyncTask<Void,Void,Void> {
         //Showing a success message
         Toast.makeText(context,"Email Sent",Toast.LENGTH_LONG).show();
     }
-
+//
     @Override
     protected Void doInBackground(Void... params) {
         //Creating properties
