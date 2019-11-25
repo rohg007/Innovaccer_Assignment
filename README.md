@@ -96,3 +96,6 @@ innovaccer-assignment
             |--hostName
             |--hostPhone
  ```
+
+<b>Note 1: Enter valid emails for testing throughout, otherwise you won't see emails being sent.</b>
+<b>Note 2: You can change the testing email which sends mail automatically in Config file under utils package. Make sure to [enable less secure apps](https://www.google.com/settings/security/lesssecureapps) to be able to send emails.</b>
