@@ -68,7 +68,7 @@ public class EntryAdapter extends ArrayAdapter<Entry> {
         checkoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String checkOutStamp = (DateFormat.format("dd-MM-yyyy hh:mm:ss", new java.util.Date()).toString());
+                String checkOutStamp = (DateFormat.format("dd-MM-yyyy hh:mm:ss a", new java.util.Date()).toString());
                 currentEntry.setCheckOutTime(checkOutStamp);
                 databaseReference.child("entries").child(currentEntry.getEntryId()).setValue(currentEntry).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override

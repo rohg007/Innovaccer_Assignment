@@ -22,6 +22,7 @@ import android.view.ViewConfiguration;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 import com.rohg007.android.innovaccerassignment.ui.main.AddHostActivity;
 import com.rohg007.android.innovaccerassignment.ui.main.LoginActivity;
 import com.rohg007.android.innovaccerassignment.ui.main.MakeEntry;

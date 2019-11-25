@@ -67,6 +67,9 @@ public class MakeEntry extends Fragment {
                     Intent intent = new Intent(getActivity(), HostListActivity.class);
                     intent.putExtra("ENTRY", entry);
                     startActivity(intent);
+                    visitorNameEdt.setText("");
+                    visitorEmailEdt.setText("");
+                    visitorPhoneEdt.setText("");
                 } else {
                     Toast.makeText(getActivity(),"One or More fields entered aren't valid",Toast.LENGTH_SHORT).show();
                 }

@@ -122,7 +122,7 @@ public class HostListActivity extends AppCompatActivity {
     private void addDetailsToFirebase(Entry currEntry){
         String id = databaseReference.push().getKey();
         currEntry.setEntryId(id);
-        String checkInStamp = (DateFormat.format("dd-MM-yyyy hh:mm:ss", new java.util.Date()).toString());
+        String checkInStamp = (DateFormat.format("dd-MM-yyyy hh:mm:ss a", new java.util.Date()).toString());
         currEntry.setCheckInTime(checkInStamp);
 
         databaseReference.child("entries").child(id).setValue(currEntry).addOnCompleteListener(new OnCompleteListener<Void>() {

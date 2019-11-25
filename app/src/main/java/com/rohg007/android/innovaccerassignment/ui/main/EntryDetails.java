@@ -50,6 +50,9 @@ public class EntryDetails extends AppCompatActivity {
         final Button checkOutButton = findViewById(R.id.detail_checkout_button);
 
         Intent intent = getIntent();
+        int fragmentCode = intent.getIntExtra("FRAGMENT_CODE",0);
+        if(fragmentCode==99)
+            checkOutButton.setVisibility(View.GONE);
         final Entry entry = intent.getParcelableExtra("ENTRY");
         visitorNameTv.setText(entry.getVisitorName());
         visitorEmailTv.setText(entry.getVistorEmail());
@@ -57,14 +60,14 @@ public class EntryDetails extends AppCompatActivity {
         hostNameTv.setText(entry.getHost().getHostName());
         hostEmailTv.setText(entry.getHost().getHostEmail());
         hostPhoneTv.setText(entry.getHost().getHostPhone());
-        hostAddressTv.setText(entry.getHost().getHostPhone());
+        hostAddressTv.setText(entry.getHost().getHostAddress());
         checkInTimeTv.setText(entry.getCheckInTime());
         checkOutTimeTv.setText(entry.getCheckOutTime());
 
         checkOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String checkOutStamp = (DateFormat.format("dd-MM-yyyy hh:mm:ss", new java.util.Date()).toString());
+                String checkOutStamp = (DateFormat.format("dd-MM-yyyy hh:mm:ss a", new java.util.Date()).toString());
                 entry.setCheckOutTime(checkOutStamp);
                 databaseReference.child("entries").child(entry.getEntryId()).setValue(entry).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
