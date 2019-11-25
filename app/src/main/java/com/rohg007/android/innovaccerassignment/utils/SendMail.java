@@ -51,7 +51,7 @@ public class SendMail extends AsyncTask<Void,Void,Void> {
         super.onPostExecute(aVoid);
         //Dismissing the progress dialog
         //Showing a success message
-        Toast.makeText(context,"Email Sent to Host",Toast.LENGTH_LONG).show();
+        Toast.makeText(context,"Email Sent",Toast.LENGTH_LONG).show();
     }
 
     @Override
