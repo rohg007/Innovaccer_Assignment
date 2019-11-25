@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.LoginActivity"
+    android:layout_margin="16dp">
+
+    <EditText
+        android:id="@+id/login_email_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Email"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="monospace"/>
+
+    <EditText
+        android:id="@+id/login_password_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Password"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_email_edt"
+        android:inputType="textPassword"
+        android:fontFamily="monospace"/>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/login_password_edt">
+
+    <Button
+        android:id="@+id/login_submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_bg"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:fontFamily="monospace"/>
+
+    <Button
+        android:id="@+id/login_signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_bg"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:fontFamily="monospace"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_layout"
+        android:layout_marginTop="16dp"
+        android:text="If you are logging in for first Time \n Enter an email and password you'd like to choose \nClick on Sign Up Now you're signed up, with same credentials click on login and you'll be directed to the main app \nNot the first time\n Straight away fill your credentials and click on login"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

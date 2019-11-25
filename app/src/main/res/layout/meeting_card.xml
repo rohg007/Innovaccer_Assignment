@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:contentPadding="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="Visitor Name:"
+                android:textColor="@color/colorAccent"
+                android:tint="@color/colorAccent"
+                android:fontFamily="monospace"/>
+
+            <TextView
+                android:id="@+id/visitor_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rohan Gupta"
+                android:fontFamily="monospace"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="Host Name:"
+                android:textColor="@color/colorAccent"
+                android:tint="@color/colorAccent"
+                android:fontFamily="monospace"/>
+
+            <TextView
+                android:id="@+id/host_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rohan Gupta"
+                android:fontFamily="monospace"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginHorizontal="16dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:tint="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/check_in_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check in Time"
+                android:fontFamily="monospace"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/checkout_layout">
+
+            <ImageView
+                android:id="@+id/left_arrow_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginHorizontal="16dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:tint="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/check_out_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check out Time"
+                android:fontFamily="monospace"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/checkout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="monospace"
+            android:text="CHECKOUT"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:focusable="false"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

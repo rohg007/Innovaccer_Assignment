@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Innovaccer Assignment</string>
+    <string name="tab_text_1">Make Entry</string>
+    <string name="tab_text_2">Current Entries</string>
+    <string name="tab_text_3">Past Entries</string>
+    <string name="auth_email">test.rohg007@gmail.com</string>
+    <string name="auth_password">*1a2b3c4d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

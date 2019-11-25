@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.EntryDetails">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/visitor_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="16dp"
+            app:contentPadding="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/visitor_name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visitor's Name: "
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/visitor_name_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/visitor_name_label"
+                    android:text="Rohan"
+                    android:fontFamily="monospace"/>
+
+                <TextView
+                    android:id="@+id/visitor_email_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visitor's Email: "
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:layout_below="@id/visitor_name_detail"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/visitor_email_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="abc@xyz.in "
+                    android:fontFamily="monospace"
+                    android:layout_toEndOf="@id/visitor_email_label"
+                    android:layout_below="@id/visitor_name_detail"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/visitor_phone_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visitor's Phone: "
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:layout_below="@id/visitor_email_detail"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/visitor_phone_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="999999999"
+                    android:fontFamily="monospace"
+                    android:layout_toEndOf="@id/visitor_email_label"
+                    android:layout_below="@id/visitor_email_detail"
+                    android:layout_marginTop="16dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/host_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/visitor_card"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:contentPadding="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/host_name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Host's Name: "
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/host_name_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/host_name_label"
+                    android:text="Rohan"
+                    android:fontFamily="monospace"/>
+
+                <TextView
+                    android:id="@+id/host_email_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Host's Email: "
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:layout_below="@id/host_name_detail"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/host_email_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="abc@xyz.in "
+                    android:fontFamily="monospace"
+                    android:layout_toEndOf="@id/host_email_label"
+                    android:layout_below="@id/host_name_detail"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/host_phone_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Host's Phone: "
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:layout_below="@id/host_email_detail"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/host_phone_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="999999999"
+                    android:fontFamily="monospace"
+                    android:layout_toEndOf="@id/host_email_label"
+                    android:layout_below="@id/host_email_detail"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/host_address_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Host's Address: "
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:layout_below="@id/host_phone_detail"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/host_address_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D-321"
+                    android:fontFamily="monospace"
+                    android:layout_toEndOf="@id/host_address_label"
+                    android:layout_below="@id/host_phone_detail"
+                    android:layout_marginTop="16dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/time_detail_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/host_card"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:contentPadding="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/checkin_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check-In TimeStamp: "
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/checkin_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/checkin_label"
+                    android:text="12:45 PM"
+                    android:fontFamily="monospace"/>
+
+                <TextView
+                    android:id="@+id/checkout_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check-Out TimeStamp: "
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:layout_below="@id/checkin_detail"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/checkout_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1:45 PM"
+                    android:fontFamily="monospace"
+                    android:layout_toEndOf="@id/checkout_label"
+                    android:layout_below="@id/checkin_detail"
+                    android:layout_marginTop="16dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/detail_checkout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="CHECKOUT"
+            app:layout_constraintTop_toBottomOf="@id/time_detail_card"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white"
+            android:fontFamily="monospace"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

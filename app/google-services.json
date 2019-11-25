@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "243816815273",
+    "firebase_url": "https://innovaccer-assignment-d5f33.firebaseio.com",
+    "project_id": "innovaccer-assignment-d5f33",
+    "storage_bucket": "innovaccer-assignment-d5f33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243816815273:android:586e755a976ef8979c27b8",
+        "android_client_info": {
+          "package_name": "com.rohg007.android.innovaccerassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243816815273-bset25gk3oe14og7vreplvgis6mlbful.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rohg007.android.innovaccerassignment",
+            "certificate_hash": "97923834290487c0b933f88814ad20e4e9f4a86f"
+          }
+        },
+        {
+          "client_id": "243816815273-jinmu8atveq4njeqrthhdt9u6bud8oqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoAWuEZhzgnka-q8xpTvIb2LjgT_B2I-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243816815273-jinmu8atveq4njeqrthhdt9u6bud8oqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
