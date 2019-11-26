@@ -72,6 +72,8 @@ This is an entry management software requiring basic initial configurations.
 ## Application Installation
 Clone the repo in your <b>Android Studio</b> and run it on an emulator or on your android device. You can also [generate an APK](https://stackoverflow.com/questions/16709848/build-unsigned-apk-file-with-android-studio) from <b>Android Studio</b> and install it on any Android phone you want.
 
+You can also download APK from apks folder of the project. Alternatively you can navigate to app/build/outputs/debug/app-debug.apk
+
 <b>You may find screenshots in the screenshots folder</b>
 
 ## Database Structure
