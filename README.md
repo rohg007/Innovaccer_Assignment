@@ -70,6 +70,33 @@ This is an entry management software requiring basic initial configurations.
 </ol>
 
 ## Application Installation
-Clone the repo in your <b>Android Studio</b> and run it on an emulator or on your android device. You can also generate an APK from <b>Android Studio</b> and install it on any Android phone you want.
+Clone the repo in your <b>Android Studio</b> and run it on an emulator or on your android device. You can also [generate an APK](https://stackoverflow.com/questions/16709848/build-unsigned-apk-file-with-android-studio) from <b>Android Studio</b> and install it on any Android phone you want.
 
 <b>You may find screenshots in the screenshots folder</b>
+
+## Database Structure
+```
+innovaccer-assignment
+ |
+ |--AdminID
+    |--entries
+        |--entryID
+            |--checkInTime
+            |--checkOutTime
+            |--entryID
+            |--host
+            |--visitorName
+            |--visitorPhone
+            |--visitorEmail
+     |--hosts
+        |--hostID
+            |--hostAddress
+            |--hostEmail
+            |--hostID
+            |--hostName
+            |--hostPhone
+ ```
+
+<b>Note 1: Enter valid emails for testing throughout, otherwise you won't see emails being sent.</b>
+
+<b>Note 2: You can change the testing email which sends mail automatically in Config file under utils package. Make sure to [enable less secure apps](https://www.google.com/settings/security/lesssecureapps) to be able to send emails.</b>
