@@ -13,11 +13,15 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.rohg007.android.innovaccerassignment.MainActivity;
 import com.rohg007.android.innovaccerassignment.R;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -50,7 +54,10 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = emailEdt.getText().toString();
                 String password = passwordEdt.getText().toString();
-                login(email,password);
+                if(isValidEmail(email)&&password.length()>=6)
+                    login(email,password);
+                else
+                    Snackbar.make(emailEdt,"One or more fields aren't valid",Snackbar.LENGTH_LONG).show();
             }
         });
 
@@ -59,7 +66,10 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = emailEdt.getText().toString();
                 String password = passwordEdt.getText().toString();
-                signUp(email,password);
+                if(isValidEmail(email)&&password.length()>=6)
+                    signUp(email,password);
+                else
+                    Snackbar.make(emailEdt,"One or more fields aren't valid",Snackbar.LENGTH_LONG).show();
             }
         });
 
@@ -106,5 +116,14 @@ public class LoginActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+    private boolean isValidEmail(String email) {
+        String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+                + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+
+        Pattern pattern = Pattern.compile(EMAIL_PATTERN);
+        Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
     }
 }
