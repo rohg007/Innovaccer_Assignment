@@ -1,6 +1,8 @@
 # Innovaccer_Assignment
 Innovaccer's SummerGeeks 2020 Assignment
 
+<img src="https://github.com/rohg007/Innovaccer_Assignment/blob/master/screenshots/login_screen.png" alt="Login Screen" width="200" height="320"> <img src="https://github.com/rohg007/Innovaccer_Assignment/blob/master/screenshots/make_entry.png" alt="Make Entry" width="200" height="320"> <img src="https://github.com/rohg007/Innovaccer_Assignment/blob/master/screenshots/current_entries.png" alt="Current Entries" width="200" height="320"> <img src="https://github.com/rohg007/Innovaccer_Assignment/blob/master/screenshots/past_entry.png" alt="Past Entries" width="200" height="320"> <img src="https://github.com/rohg007/Innovaccer_Assignment/blob/master/screenshots/entry_details.png" alt="Entry Details" width="200" height="320"> <img src="https://github.com/rohg007/Innovaccer_Assignment/blob/master/screenshots/host_list.png" alt="Add Host" width="200" height="320"> <img src="https://github.com/rohg007/Innovaccer_Assignment/blob/master/screenshots/sample_email.png" alt="Sample Mail" width="200" height="320"> <img src="https://github.com/rohg007/Innovaccer_Assignment/blob/master/screenshots/sample_message.png" alt="Sample Message" width="200" height="320"> <img src="https://github.com/rohg007/Innovaccer_Assignment/blob/master/screenshots/db_sample1.png" alt="Database 1" width="400" height="250"> <img src="https://github.com/rohg007/Innovaccer_Assignment/blob/master/screenshots/db_sample2.png" alt="Database 2" width="400" height="250"> 
+
 ## Description
 This is an entry management software as a part of Innocaccer's SummerGeeks 2020. Multiple clients can use this application with each client having exclusive access to only his data.
 Here, you can maintain the list of host/employees and manage visitor entry/exit system. You can the past and presently running entries in the app itself.
@@ -72,9 +74,9 @@ This is an entry management software requiring basic initial configurations.
 ## Application Installation
 Clone the repo in your <b>Android Studio</b> and run it on an emulator or on your android device. You can also [generate an APK](https://stackoverflow.com/questions/16709848/build-unsigned-apk-file-with-android-studio) from <b>Android Studio</b> and install it on any Android phone you want.
 
-You can also download APK from apks folder of the project. Alternatively you can navigate to app/build/outputs/debug/app-debug.apk
+> You can also download APK from [apks folder](https://github.com/rohg007/Innovaccer_Assignment/tree/master/apks) of the project. Alternatively, you can navigate to app/build/outputs/debug/app-debug.apk
 
-<b>You may find screenshots in the screenshots folder</b>
+> <b>You may find screenshots in the screenshots folder</b>
 
 ## Database Structure
 ```
